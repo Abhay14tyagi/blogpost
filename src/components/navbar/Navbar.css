@@ -1,0 +1,54 @@
+.navbar-container {
+    background-color: #6bcbda;
+}
+
+.navbar-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+}
+
+.main-search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.main-search-bar input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.navbar-left-menu {
+    display: flex;
+    align-items: center;
+}
+
+#dropdown-basic {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 10px; /* Adjust margin for spacing */
+    align-items: center; /* Adjust alignment as needed */
+}
+
+#dropdown-basic a {
+    margin-right: 10px; /* Adjust spacing between dropdown items */
+}
+
+.navbar-right-menu {
+    display: flex;
+    align-items: center;
+}
+
+#dropdown-basic:focus {
+    box-shadow: none;
+}
+
+
