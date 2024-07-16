@@ -1,0 +1,58 @@
+/* Container for all blogs */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(212, 198, 172);
+}
+
+/* Individual blog card */
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Blog title */
+.blog-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Blog content */
+.blog-content {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Blog author */
+.blog-author {
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* Blog date */
+.blog-date {
+  font-size: 0.8em;
+  color: #bbb;
+}
+
+/* Loading and error states */
+.loading, .error {
+  text-align: center;
+  font-size: 1.2em;
+  color: #999;
+  padding:20px;
+}

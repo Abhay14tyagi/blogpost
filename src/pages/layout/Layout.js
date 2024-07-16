@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import loaderImage from '../../assets/images/loading.gif';
+import loaderImage from '../../assets/images/load.gif';
 //import TopBar from '../../components/topbar/TopBar';
 import Navbar from '../../components/navbar/Navbar';
 //import Footer from '../../components/footer/Footer';
@@ -14,11 +14,11 @@ const Layout = ({ children }) => {
         <>
             {loader ?
                 <div className='loader'>
-                    <img src={loaderImage} alt='Loader' width={'50px'} height={'50px'} />
+                    {/* <img src={loaderImage} alt='Loader' width={'50px'} height={'50px'} /> */}
                 </div>
                 :
                 <div className='layout'>
-                    {/* <TopBar /> */}
+                    {/*<TopBar />*/}
                     <Navbar />
                     {children}
                     {/* <Footer /> */}
@@ -28,5 +28,4 @@ const Layout = ({ children }) => {
     )
 }
  
-export default Layout
- 
+export default Layout;

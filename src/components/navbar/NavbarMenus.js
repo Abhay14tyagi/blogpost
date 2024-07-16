@@ -11,8 +11,7 @@ const NavbarMenus = () => {
  
             <Dropdown.Menu>
                 <Dropdown.Item href="/">    Home   </Dropdown.Item>
-                <Dropdown.Item href="/blog">    Blog   </Dropdown.Item>
-                <Dropdown.Item href="/categories">    Categories   </Dropdown.Item>
+                <Dropdown.Item href="/blogs">    Blog   </Dropdown.Item>
                 <Dropdown.Item href="/about">    About   </Dropdown.Item>
                 <Dropdown.Item href="/contact">    Contact   </Dropdown.Item>
             </Dropdown.Menu>
@@ -20,4 +19,4 @@ const NavbarMenus = () => {
     );
 }
  
-export default NavbarMenus;
+export default NavbarMenus;
