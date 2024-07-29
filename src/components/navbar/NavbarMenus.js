@@ -19,4 +19,4 @@ const NavbarMenus = () => {
     );
 }
  
-export default NavbarMenus;
+export default NavbarMenus;

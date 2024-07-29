@@ -8,19 +8,18 @@ const AllBlogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  
+  const fetchBlogs = async () => {
+    try {
+      const response = await axios.get('http://localhost:3030/api/v1/blog/getAllBlogs');
+      setBlogs(response.data.data);
+    } catch (err) {
+      setError('Failed to fetch blogs');
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const response = await axios.get('http://localhost:3030/api/v1/blog/getAllBlogs');
-        setBlogs(response.data.data);
-      } catch (err) {
-        setError('Failed to fetch blogs');
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchBlogs();
   }, []);
 
@@ -50,4 +49,4 @@ const AllBlogs = () => {
   );
 };
 
-export default AllBlogs;
+export default AllBlogs;

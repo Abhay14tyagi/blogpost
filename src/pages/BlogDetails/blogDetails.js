@@ -14,8 +14,8 @@ const BlogDetail = () => {
       try {
         const response = await axios.get(`http://localhost:3030/api/v1/blog/fetch/${id}`);
         console.log('API response:', response); // Log the response for debugging
-        if (response.data && response.data.Blog_Title) {
-          setBlog(response.data);
+        if (response.data.data && response.data.data.Blog_Title) {
+          setBlog(response.data.data);
         } else {
           setError('Blog not found');
         }
