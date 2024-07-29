@@ -40,7 +40,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const Navbar = () => {
     return (
         <>
-            <Container fluid className='navbar-container py-3'>
+            <Container fluid className='navbar-container py-2'>
                 <div className='navbar-wrap'>
                     <div className='navbar-left-menu'>
                         <Link to="/" className='navbar-item'>Home</Link>

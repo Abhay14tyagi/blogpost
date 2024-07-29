@@ -7,6 +7,7 @@ import AllBlogs from './pages/AllBlogs/AllBlogs'
  import ArticleDetail from './pages/article_detail/article'
 import BlogDetail from './pages/BlogDetails/blogDetails'
 import About from './pages/AboutUs/About'
+import Contact from './pages/Contact/Contact'
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/blogs" exact element={<AllBlogs/>} />
         <Route path="/blog/:id" exact element={<BlogDetail/>} />
         <Route path="/about" exact element={<About/>} />
+        <Route path="/contact" exact element={<Contact/>} />
       </Routes>
     </BrowserRouter>
     </>
