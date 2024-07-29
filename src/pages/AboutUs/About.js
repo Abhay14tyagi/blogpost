@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'; // Assuming you have a CSS file for styling
+import './About.css'; 
 import Layout from '../layout/Layout';
 const About = () => {
   return (
